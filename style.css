@@ -1,0 +1,398 @@
+*{
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: white;
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.container{
+    margin: 75px 100px;
+}
+
+.btn{
+    padding: 14px 20px;
+    width: 168px;
+    color: white;
+    background-color: #FF136F;
+    border: 0;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+
+#header-img{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+
+#hero{
+    background-color: #FEEAE9;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    padding: 40px;
+    border-radius: 12px;
+}
+
+#hero h1{
+    width: 560px;
+    max-width: 100%;
+    color: #1F1F1F;
+    font-size: 56px;
+    font-weight: bold;
+    padding-bottom: 10px;
+}
+
+#hero p{
+    font-size: 18px;
+    padding-bottom: 20px;
+    color: #4E4E4E;
+    width: 456px;
+    max-width: 100%;
+}
+
+#hero .price{
+    color: #FF136F;
+    font-size: 41px;
+    font-weight: 500;
+}
+
+
+#categories-head{
+    padding-bottom: 20px;
+    font-size: 38px;
+    font-weight: 600;
+}
+
+#categories-cards{
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+#card-content{
+    width: 359px;
+    max-width: 100%;
+    height: 120px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 10px;
+    padding: 0 25px;
+}
+
+.card1{
+    background-color: #FF9C35;
+}
+
+.card2{
+    background-color: #FF136F;
+}
+
+.card3{
+    background-color: #3F07F8;
+}
+
+#card-content p{
+    color: white;
+    font-size: 36px;
+    font-weight: 500;
+    margin: 0;
+}
+
+
+#shoe-cards{
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.shoe-card{
+    border: 1px solid black;
+    border-radius: 20px;
+    width: 360px;
+    max-width: 100%;
+    text-align: center;
+    padding: 20px;
+}
+
+.shoe-card-content{
+    padding: 10px 0 0;
+    margin: 0;
+}
+
+.buybutton{
+    background-color: black;
+    cursor: pointer;
+}
+
+.shoe-card-content p{
+    max-width: 500px;
+    margin: 0 auto;
+    color: #4E4E4E;
+}
+
+.shoe-card-content h3{
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.shoe-card-content h4{
+    text-align: center;
+    margin: 10px 0;
+    font-size: 24px;
+}
+
+#btn{
+    text-align: center;
+}
+
+
+#newsletter{
+    background: #FEEAE9;
+    padding: 80px 20px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+#newsletter h2{
+    font-size: 28px;
+    font-weight: 700;
+    color: #1F1F1F;
+}
+
+#newsletter p{
+    color: #707070;
+    margin: 10px 0 30px;
+}
+
+.newsletter-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.newsletter-box input{
+    width: 100%;
+    padding: 14px;
+    border: none;
+    border-radius: 8px 0 0 8px;
+    outline: none;
+    font-size: 16px;
+}
+
+.newsletter-box button{
+    padding: 14px 30px;
+    border: none;
+    background: linear-gradient(90deg,#FF589B,#FF136F);
+    color: white;
+    font-size: 16px;
+    border-radius: 0 8px 8px 0;
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+
+@media (max-width: 1024px){
+    .container{
+        margin: 60px 50px;
+    }
+
+    #hero{
+        padding: 30px;
+    }
+
+    #hero h1{
+        font-size: 44px;
+        width: 100%;
+    }
+
+    #hero p{
+        width: 100%;
+        font-size: 16px;
+    }
+
+    #card-content{
+        width: 32%;
+        min-width: 250px;
+    }
+
+    .shoe-card{
+        width: 48%;
+    }
+}
+
+
+@media (max-width: 768px){
+    .container{
+        margin: 40px 25px;
+    }
+
+    #header-img{
+        flex-direction: row;
+    }
+
+    #hero{
+        flex-direction: column-reverse;
+        text-align: center;
+        padding: 25px 20px;
+    }
+
+    #hero h1{
+        font-size: 36px;
+        width: 100%;
+    }
+
+    #hero p{
+        width: 100%;
+        font-size: 16px;
+        margin: 0 auto;
+    }
+
+    #categories-head{
+        font-size: 30px;
+    }
+
+    #categories-cards{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #card-content{
+        width: 100%;
+        max-width: 400px;
+    }
+
+    #card-content p{
+        font-size: 30px;
+    }
+
+    #shoe-cards{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .shoe-card{
+        width: 100%;
+        max-width: 420px;
+    }
+
+    .newsletter-box{
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .newsletter-box input{
+        border-radius: 8px;
+    }
+
+    .newsletter-box button{
+        width: 100%;
+        border-radius: 8px;
+    }
+}
+
+
+@media (max-width: 480px){
+    .container{
+        margin: 25px 15px;
+    }
+
+    .btn{
+        width: 140px;
+        padding: 12px 16px;
+        font-size: 14px;
+    }
+
+    #header-img img:first-child{
+        width: 120px;
+    }
+
+    #header-img img:last-child{
+        width: 35px;
+    }
+
+    #hero{
+        padding: 20px 15px;
+    }
+
+    #hero h1{
+        font-size: 28px;
+        line-height: 1.3;
+    }
+
+    #hero p{
+        font-size: 14px;
+        line-height: 1.6;
+    }
+
+    #hero .price{
+        font-size: 30px;
+    }
+
+    #categories-head{
+        font-size: 24px;
+    }
+
+    #card-content{
+        height: 100px;
+        padding: 0 18px;
+    }
+
+    #card-content p{
+        font-size: 24px;
+    }
+
+    #card-content img{
+        width: 70px;
+    }
+
+    .shoe-card{
+        padding: 15px;
+    }
+
+    .shoe-card-content h3{
+        font-size: 20px;
+    }
+
+    .shoe-card-content h4{
+        font-size: 20px;
+    }
+
+    #newsletter{
+        padding: 50px 15px;
+    }
+
+    #newsletter h2{
+        font-size: 22px;
+    }
+
+    #newsletter p{
+        font-size: 14px;
+    }
+
+    .newsletter-box input,
+    .newsletter-box button{
+        font-size: 14px;
+        padding: 12px;
+    }
+}
